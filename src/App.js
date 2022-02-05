@@ -1,10 +1,12 @@
 import './App.css';
+import AddEmployee from './component/AddEmployee';
 import Registration from './component/Registration';
 
 function App() {
   return (
     <div className="App">
-      <Registration/>
+      
+      <AddEmployee/>
     </div>
   );
 }
