@@ -1,4 +1,5 @@
 import './App.css';
+import AddEmployee from './component/AddEmployee';
 import Registration from './component/Registration';
 import UpdateEmployee from './component/UpdateEmployee';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       {/* <Registration/> */}
       <UpdateEmployee />
+      <AddEmployee/>
     </div>
   );
 }
