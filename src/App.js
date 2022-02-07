@@ -5,7 +5,7 @@ import UpdateEmployee from './component/UpdateEmployee';
 function App() {
   return (
     <div className="App">
-      <Registration/>
+      {/* <Registration/> */}
       <UpdateEmployee />
     </div>
   );
