@@ -1,22 +1,25 @@
+
 import './App.css';
-
-import Login from './component/Login';
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import AddEmployee from './component/AddEmployee';
+import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import Table from './component/Table';
 
-import Registration from './component/Registration';
-import UpdateEmployee from './component/UpdateEmployee';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
 
-      <Registration/>
-      <Login/>
-      {/* <Registration/> */}
-      <UpdateEmployee />
-      <AddEmployee/>
+
+      <Switch>
+        <Route exact path='/' component={Table}/>
+        <Route exact path="/AddEmployee" component={AddEmployee}/>
+      </Switch>
+
     </div>
+    </Router>
   );
 }
 
